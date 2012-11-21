@@ -5,9 +5,11 @@ from clustering import Clusterer
 
 def main():
 	
+	#start Stanford NER
 	p = subprocess.Popen("java -mx1000m -cp stanford-ner/stanford-ner.jar edu.stanford.nlp.ie.NERServer -loadClassifier stanford-ner/classifiers/english.all.3class.distsim.crf.ser.gz -port 1239", shell=True)
-	time.sleep(5)
-	# sts = os.waitpid(p.pid, 0)
+	#wait ten sec to make sure NER is up and running
+	time.sleep(10)
+
 	datafile = open('data/data.json', 'r')
 	data = json.load(datafile)
 	documents = []
@@ -19,10 +21,11 @@ def main():
 	d = distances.get_distance("Cosine")
 	clus = Clusterer(documents, d, int(sys.argv[1]))
 	clus.process_documents()
+	print "Clustering finished ======================================================= \n"
 	clus.print_all_topics()
-	print p.pid
 
-	# print os.kill(p.pid+1, 9)
+	#kill NER
+	os.kill(p.pid+1, 9)
 
 
 if __name__ == '__main__':

@@ -147,8 +147,9 @@ class BagOfWords(object):
 	def add_importance_to_word(self, word):
 		"""Give a word more weight (only used for terms that define a topic)"""
 		if word in self.words:
-			self.words[word] += self.words[word]*2
-			self.topic_terms.append(word)
+			self.words[word] += self.words[word]*3
+			if word not in self.topic_terms:
+				self.topic_terms.append(word)
 
 	def stats(self):
 		"""print some statistics about this BagOfWords"""

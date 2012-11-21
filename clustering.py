@@ -112,9 +112,8 @@ class Clusterer(object):
 			init_level.append(Cluster([doc], self.distance))
 		self.clusters.append(init_level)
 
-		iteration = len(self.documents)
-		step = 1
-		while len(self.clusters[len(self.clusters)-1]) > 1 and iteration > self.number_of_iterations:
+		iteration = 0
+		while len(self.clusters[len(self.clusters)-1]) > 1 and iteration < self.number_of_iterations:
 			next_level = self.clusters[len(self.clusters)-1]
 			merge_clusters = self.average_group_linkage()
 			members = []
@@ -123,9 +122,8 @@ class Clusterer(object):
 				next_level.remove(cluster)
 			next_level.append(Cluster(members, self.distance))
 			self.clusters.append(next_level)
-			self.print_cluster_step(next_level, iteration)
-			iteration -= 1
-			step += 1
+			self.print_cluster_step(next_level, iteration+1)
+			iteration += 1
 
 	def print_cluster_step(self, level, step):
 		"""Print clusters created in one iteration."""
@@ -145,19 +143,19 @@ class Clusterer(object):
 		for c in self.topics:
 			stre = ""
 			for x in c:
-				stre+= ', '.join(Document.vocabulary.get_stem_word_mapping(Document.vocabulary.get_word_index(x))) + " | "
+				stre+= ','.join(Document.vocabulary.get_stem_word_mapping(Document.vocabulary.get_word_index(x))) + " | "
 
-			all_topics += "Topic %s defined by terms: \n %s \n" % (i, stre)
+			all_topics += "Topic %s defined by terms: \n\n %s \n\n" % (i, stre)
 			i += 1
 		print all_topics
 
 	def single_linkage(self):
 		clos1,clos2 = None, None
-		min_dist = -2
+		min_dist = -999
 		for cl in self.clusters[len(self.clusters)-1]:
 			for cl1 in self.clusters[len(self.clusters)-1]:
 				if cl is not cl1:
-					dist = -2
+					dist = -999
 					for m in cl.content:
 						for m1 in cl1.content:
 							cos = self.distance.get_distance(m, m1)
@@ -171,11 +169,11 @@ class Clusterer(object):
 
 	def complete_linkage(self):
 		clos1,clos2 = None, None
-		min_dist = -3333
+		min_dist = -999
 		for cl in self.clusters[len(self.clusters)-1]:
 			for cl1 in self.clusters[len(self.clusters)-1]:
 				if cl is not cl1:
-					dist = 200000
+					dist = 999
 					for m in cl.content:
 						for m1 in cl1.content:
 							cos = self.distance.get_distance(m, m1)
@@ -189,11 +187,11 @@ class Clusterer(object):
 
 	def average_linkage(self):
 		clos1,clos2 = None, None
-		min_dist = -3333
+		min_dist = -999
 		for cl in self.clusters[len(self.clusters)-1]:
 			for cl1 in self.clusters[len(self.clusters)-1]:
 				if cl is not cl1:
-					dist = 200000
+					dist = 999
 					su = 0.0
 					for m in cl.content:
 						for m1 in cl1.content:
@@ -209,11 +207,11 @@ class Clusterer(object):
 
 	def average_group_linkage(self):
 		clos1,clos2 = None, None
-		min_dist = -3333
+		min_dist = -999
 		for cl in self.clusters[len(self.clusters)-1]:
 			for cl1 in self.clusters[len(self.clusters)-1]:
 				if cl is not cl1:
-					dist = 200000
+					dist = 999
 					su = 0.0
 					content_both = []
 					content_both += cl.content + cl1.content
@@ -245,7 +243,7 @@ class Cluster(object):
 		for x in self.content:
 			print x.title
 			topics += ' | '.join(x.bag_of_words.topic_terms)
-		print "\n Topic terms contained in this cluster: \n"
+		print "\nTopic terms contained in this cluster: \n"
 		print topics
 
 		
