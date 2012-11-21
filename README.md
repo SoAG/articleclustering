@@ -42,13 +42,9 @@ the 6 stands for number of iterations and has to be given, but can be chosen to 
 ##Results
 Good results were obtained with 10-12 iterations. As can be seen there is still some cleaning to be done in the term vector as well as the topic vectors.
 
+###Topics
 
-
-###Topics  
- 
-
-
-Topic 1 defined by terms:  
+Topic 1 defined by terms:
 
  guests,guest | state,stated,states | relationship,relationships | president,presidents,presidency | visit,visited,visiting | mr | peoples,people | obama | world | quee | oecd | growth | increase,increases,increasing | economy | 1 | remai | s | public | 8 | rates |     
 
