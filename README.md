@@ -43,7 +43,9 @@ the 6 stands for number of iterations and has to be given, but can be chosen to 
 Good results were obtained with 10-12 iterations. As can be seen there is still some cleaning to be done in the term vector as well as the topic vectors.
 
 
-Topics found:  
+============================================================================
+Topics
+============================================================================ 
 
 
 Topic 1 defined by terms:  
@@ -66,82 +68,84 @@ Topic 5 defined by terms:
 
  public | order | law | privacy | lawyers,lawyer | s | court,courts | informatio | users,user | year,years | england | bee | services,service | cent |     
 
-
+============================================================================
+Clusters
+============================================================================
 
 Iteration: 10   Number of clusters:  8    
 CLUSTER 1    
 
-Flights cancelled as ash cloud heads towards UK
-Ash Cloud Clears UK 'But Set To Return'
+Flights cancelled as ash cloud heads towards UK   
+Ash Cloud Clears UK 'But Set To Return'   
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:    
 
-state | relationship | presid | visit | mr | obama | 1 | remai | s | 8 | o | say | uk | england | servic | ash | airlin | cancel | airport | travel | edinburgh | volcano | year | beemr | remai | s | o | uk | england | ash | airlin | cancel | airport | travel | edinburgh | volcano | bee
+state | relationship | presid | visit | mr | obama | 1 | remai | s | 8 | o | say | uk | england | servic | ash | airlin | cancel | airport | travel | edinburgh | volcano | year | beemr | remai | s | o | uk | england | ash | airlin | cancel | airport | travel | edinburgh | volcano | bee   
 
-CLUSTER 2 
+CLUSTER 2    
 
-The Queen toasts Barack Obama and special relationship with the US
-Barack Obama says he would repeat Pakistan raid
+The Queen toasts Barack Obama and special relationship with the US   
+Barack Obama says he would repeat Pakistan raid    
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:    
 
-guest | state | relationship | presid | visit | mr | peopl | obama | world | quee | s | o | say | uk | england | ca | look | beestate | relationship | presid | visit | peopl | obama | world | quee | 1 | s | o | say | england | ca | edinburgh | bee
+guest | state | relationship | presid | visit | mr | peopl | obama | world | quee | s | o | say | uk | england | ca | look | beestate | relationship | presid | visit | peopl | obama | world | quee | 1 | s | o | say | england | ca | edinburgh | bee     
 
-CLUSTER 3 
+CLUSTER 3       
 
-Owen wants to stay with United
-Manchester United manager Sir Alex Ferguson would love to re-sign Cristiano Ronaldo, says Marcello Lippi
+Owen wants to stay with United    
+Manchester United manager Sir Alex Ferguson would love to re-sign Cristiano Ronaldo, says Marcello Lippi    
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:     
 
-s | o | say | england | seaso | ca | look | year | beerelationship | remai | s | o | say | england | seaso | ca | year
+s | o | say | england | seaso | ca | look | year | beerelationship | remai | s | o | say | england | seaso | ca | year    
 
-CLUSTER 4 
+CLUSTER 4     
 
-Obama gives message of support to the Queen at lavish state banquet
-NHS in England to suffer smaller cuts than rest of UK
+Obama gives message of support to the Queen at lavish state banquet    
+NHS in England to suffer smaller cuts than rest of UK    
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:    
 
-guest | state | relationship | presid | visit | mr | peopl | obama | world | quee | s | o | govern | law | servic | ca | look | edinburgh | year | beestate | peopl | s | o | say | govern | order | health | nhs | england | spend | servic | cent | look | year | bee
+guest | state | relationship | presid | visit | mr | peopl | obama | world | quee | s | o | govern | law | servic | ca | look | edinburgh | year | beestate | peopl | s | o | say | govern | order | health | nhs | england | spend | servic | cent | look | year | bee    
 
-CLUSTER 5 
+CLUSTER 5     
 
-Footballer's Twitter disclosure order prompts online action
-BA pilot jailed for killing wife
+Footballer's Twitter disclosure order prompts online action   
+BA pilot jailed for killing wife    
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:     
 
-state | mr | peopl | s | public | o | say | uk | govern | order | law | privaci | lawyer | court | informatio | user | servic | ca | beequee | s | o | say | lawyer | court | year
+state | mr | peopl | s | public | o | say | uk | govern | order | law | privaci | lawyer | court | informatio | user | servic | ca | beequee | s | o | say | lawyer | court | year     
 
-CLUSTER 6 
+CLUSTER 6     
 
-Libya unrest: UK 'undecided' on sending helicopters
-Libya Typhoon pilots sent home after 'night out'
+Libya unrest: UK 'undecided' on sending helicopters     
+Libya Typhoon pilots sent home after 'night out'    
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:     
 
-state | mr | s | o | say | uk | govern | ca | bees | coningsbi | lincolnshire | spokesperso | understood | unfit | raf coningsby | station | patrol | 10 | alcohol | uk | ca | bee
+state | mr | s | o | say | uk | govern | ca | bees | coningsbi | lincolnshire | spokesperso | understood | unfit | raf coningsby | station | patrol | 10 | alcohol | uk | ca | bee    
 
-CLUSTER 7 
+CLUSTER 7     
 
-Egyptian pyramids found by infra-red satellite images
-Swimwear – this season's rules
+Egyptian pyramids found by infra-red satellite images    
+Swimwear – this season's rules    
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:     
 
-visit | peopl | world | 1 | s | o | say | ca | look | travel | year | beeguest | world | s | o | say | ca | look | year | bee
+visit | peopl | world | 1 | s | o | say | ca | look | travel | year | beeguest | world | s | o | say | ca | look | year | bee    
 
-CLUSTER 8 
+CLUSTER 8      
 
-David Cameron to resist French plan for internet regulation
-Gordon Ramsay's father in law 'fathered two children by a mistress'
-Economy grows feebly in Q1 as household spending drops
-Interest rates must be raised this year, OECD warns
+David Cameron to resist French plan for internet regulation    
+Gordon Ramsay's father in law 'fathered two children by a mistress'    
+Economy grows feebly in Q1 as household spending drops    
+Interest rates must be raised this year, OECD warns    
 
-Topic terms contained in this cluster: 
+Topic terms contained in this cluster:    
 
-guest | state | presid | peopl | world | growth | 1 | remai | s | public | o | say | govern | law | privaci | lawyer | court | ca | look | yearmr | s | public | o | say | law | privaci | court | informatio | ca | look | year | beeoecd | growth | economi | 1 | remai | s | public | 8 | rate | o | govern | spend | look | year | beeoecd | growth | increas | economi | 1 | remai | s | public | 8 | rate | o | uk | govern | order | england | spend | year
+guest | state | presid | peopl | world | growth | 1 | remai | s | public | o | say | govern | law | privaci | lawyer | court | ca | look | yearmr | s | public | o | say | law | privaci | court | informatio | ca | look | year | beeoecd | growth | economi | 1 | remai | s | public | 8 | rate | o | govern | spend | look | year | beeoecd | growth | increas | economi | 1 | remai | s | public | 8 | rate | o | uk | govern | order | england | spend | year    
 
 Clustering finished ======================================================= 
 
