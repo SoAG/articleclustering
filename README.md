@@ -40,6 +40,8 @@ the 6 stands for number of iterations and has to be given, but can be chosen to 
 
 
 ##Results
+Good results were obtained with 10-12 iterations. As can be seen there is still some cleaning to be done in the term vector as well as the topic vectors.
+
 
 Topics found:  
 
@@ -63,6 +65,8 @@ Topic 4 defined by terms:
 Topic 5 defined by terms:    
 
  public | order | law | privacy | lawyers,lawyer | s | court,courts | informatio | users,user | year,years | england | bee | services,service | cent |     
+
+
 
 Iteration: 10   Number of clusters:  8    
 CLUSTER 1    
